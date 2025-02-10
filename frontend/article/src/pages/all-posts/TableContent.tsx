@@ -19,10 +19,11 @@ import { PostsProps } from './AllPosts'
 
 type TableContentProps = {
     posts: PostsProps[],
-    fetchData: () => void
+    fetchData: () => void,
+    status: string
 }
 
-const TableContent : React.FC<TableContentProps> = ({posts, fetchData}) => {
+const TableContent : React.FC<TableContentProps> = ({posts, fetchData, status}) => {
  const handleTrash = async (post: PostsProps) => {
     try {
         const updatedPost = { ...post, status: "Thrash" };
@@ -51,7 +52,7 @@ const TableContent : React.FC<TableContentProps> = ({posts, fetchData}) => {
 
   return (
     <Table>
-        <TableCaption>A list of articles published.</TableCaption>
+        <TableCaption>A list of articles {status}.</TableCaption>
         <TableHeader>
             <TableRow>
                 <TableHead className="w-[100px]">No</TableHead>

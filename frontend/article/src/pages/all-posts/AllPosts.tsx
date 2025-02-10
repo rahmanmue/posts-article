@@ -55,13 +55,13 @@ const AllPosts = () => {
           <TabsTrigger value="Thrash" onClick={()=> setStatus("Thrash")} >Thrash</TabsTrigger>
         </TabsList>
         <TabsContent value="Publish">
-          <TableContent posts={posts || []} fetchData = {fetchData}/>
+          <TableContent posts={posts || []} fetchData = {fetchData} status={status}/>
         </TabsContent>
         <TabsContent value="Draft">
-          <TableContent posts={posts || []} fetchData = {fetchData}/>
+          <TableContent posts={posts || []} fetchData = {fetchData} status={status}/>
         </TabsContent>
         <TabsContent value="Thrash">
-          <TableContent posts={posts || []} fetchData = {fetchData}/>
+          <TableContent posts={posts || []} fetchData = {fetchData} status={status} />
         </TabsContent>
       </Tabs>
     </>
