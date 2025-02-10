@@ -13,7 +13,7 @@ export type PostsProps = {
 }
 
 const AllPosts = () => {
-  const [status, setStatus] = useState<string>("publish");
+  const [status, setStatus] = useState<string>("Publish");
   const [posts, setPosts] = useState([]);
   const fetchData = async () => {
     try {
@@ -48,19 +48,19 @@ const AllPosts = () => {
       </div>
 
 
-      <Tabs defaultValue="published" className="my-3 w-full">
+      <Tabs defaultValue="Publish" className="my-3 w-full">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="published" onClick={()=> setStatus("publish")}>Published</TabsTrigger>
-          <TabsTrigger value="draft" onClick={()=> setStatus("draft")} >Draft</TabsTrigger>
-          <TabsTrigger value="thrash" onClick={()=> setStatus("thrash")} >Thrash</TabsTrigger>
+          <TabsTrigger value="Publish" onClick={()=> setStatus("Publish")}>Publish</TabsTrigger>
+          <TabsTrigger value="Draft" onClick={()=> setStatus("Draft")} >Draft</TabsTrigger>
+          <TabsTrigger value="Thrash" onClick={()=> setStatus("Thrash")} >Thrash</TabsTrigger>
         </TabsList>
-        <TabsContent value="published">
+        <TabsContent value="Publish">
           <TableContent posts={posts || []} fetchData = {fetchData}/>
         </TabsContent>
-        <TabsContent value="draft">
+        <TabsContent value="Draft">
           <TableContent posts={posts || []} fetchData = {fetchData}/>
         </TabsContent>
-        <TabsContent value="thrash">
+        <TabsContent value="Thrash">
           <TableContent posts={posts || []} fetchData = {fetchData}/>
         </TabsContent>
       </Tabs>

@@ -25,7 +25,7 @@ type TableContentProps = {
 const TableContent : React.FC<TableContentProps> = ({posts, fetchData}) => {
  const handleTrash = async (post: PostsProps) => {
     try {
-        const updatedPost = { ...post, status: "thrash" };
+        const updatedPost = { ...post, status: "Thrash" };
         console.log(updatedPost)
         const res = await fetch(`http://localhost:8000/article/${post.id}`, {
             method : "PUT",
@@ -37,7 +37,7 @@ const TableContent : React.FC<TableContentProps> = ({posts, fetchData}) => {
         console.log(res)
 
         if(res.ok){
-            alert("Succes Move to Trash")
+            alert("Succes Move to Thrash")
             fetchData()
             return
         }

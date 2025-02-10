@@ -32,7 +32,7 @@ const FormAction = () => {
     try {
         const url = id ? `http://localhost:8000/article/${id}` : 'http://localhost:8000/article';
         const method = id ? "PUT" : "POST"
-        data.status = "publish" 
+        data.status = "Publish" 
         
         const res = await fetch(url, {
             method: method,
@@ -70,7 +70,7 @@ const FormAction = () => {
     try {
         const url = id ? `http://localhost:8000/article/${id}` : 'http://localhost:8000/article';
         const method = id ? "PUT" : "POST"
-        data.status = "draft" 
+        data.status = "Draft" 
 
 
         const res = await fetch(url, {
