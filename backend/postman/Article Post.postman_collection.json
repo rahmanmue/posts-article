@@ -22,7 +22,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Artikel 2 ini ananajsanjnasj\",\r\n    \"content\": \"Olahraga pagi bermanfaat  Olahraga pagi bermanfaat meningkatkan energi memperbaiki suasana hati, dan membantu menjaga kesehatan. Jadikan olahraga pagi sebagai rutinitas untuk tubuh lebih sehat dan semangat sepanjang hari.\",\r\n    \"category\": \"Art\",\r\n    \"status\": \"publis\"\r\n}",
+					"raw": "{\r\n    \"title\": \"Kebugaran Tubuh Dengan Berolahraga\",\r\n    \"content\": \"Olahraga pagi bermanfaat  Olahraga pagi bermanfaat meningkatkan energi memperbaiki suasana hati, dan membantu menjaga kesehatan. Jadikan olahraga pagi sebagai rutinitas untuk tubuh lebih sehat dan semangat sepanjang hari.\",\r\n    \"category\": \"Health\",\r\n    \"status\": \"Publish\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,7 +40,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Artikel edit ini ananajsanjnasj\",\r\n    \"content\": \"Olahraga pagi bermanfaat  Olahraga pagi bermanfaat meningkatkan energi memperbaiki suasana hati, dan membantu menjaga kesehatan. Jadikan olahraga pagi sebagai rutinitas untuk tubuh lebih sehat dan semangat sepanjang hari.\",\r\n    \"category\": \"Art\",\r\n    \"status\": \"draft\",\r\n    \"id\":1\r\n}",
+					"raw": "{\r\n    \"title\": \"Kebugaran Tubuh Dengan Berolahraga Lari\",\r\n    \"content\": \"Olahraga pagi bermanfaat  Olahraga pagi bermanfaat meningkatkan energi memperbaiki suasana hati, dan membantu menjaga kesehatan. Jadikan olahraga pagi sebagai rutinitas untuk tubuh lebih sehat dan semangat sepanjang hari salah satunya Lari.\",\r\n    \"category\": \"Sport\",\r\n    \"status\": \"Draft\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -56,7 +56,7 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "http://localhost:8000/article/2"
+				"url": "http://localhost:8000/article/3"
 			},
 			"response": []
 		},
@@ -65,7 +65,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8000/article/10/2"
+				"url": "http://localhost:8000/article/10/0"
 			},
 			"response": []
 		},
